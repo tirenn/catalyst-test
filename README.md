@@ -36,9 +36,9 @@ To migrate database run this command
 
     goose -dir db/migrations sqlite3 ./test.db up
 
-To Rollback migration run
+To rollback migration run
 
-    goose -dir db/migrations sqlite3 ./test.db up
+    goose -dir db/migrations sqlite3 ./test.db down
 
 or you can see the [documentation](https://github.com/pressly/goose)
 
