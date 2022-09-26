@@ -1,6 +1,7 @@
 package models
 
 type Order struct {
-	ID    int64
-	Total int64
+	ID            int64
+	Total         int64
+	OrderProducts []OrderProduct
 }

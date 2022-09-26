@@ -2,7 +2,6 @@ package brands
 
 import (
 	"database/sql"
-	"log"
 	"tirenn/catalyst/models"
 )
 
@@ -21,7 +20,6 @@ func NewRepository(db *sql.DB) RepositoryContract {
 }
 
 func (r *Repository) Create(brand *models.Brand) (err error) {
-	log.Print(brand.Name)
 	stmt, err := r.db.Prepare("INSERT INTO brands (id, name) VALUES (?, ?)")
 	if err != nil {
 		return

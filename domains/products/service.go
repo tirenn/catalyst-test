@@ -38,12 +38,7 @@ func (s *Service) Get(id int64) (res dto.Product, err error) {
 		return
 	}
 
-	brand, err := s.repository.GetBrand(product.BrandID)
-	if err != nil {
-		return
-	}
-
-	res = dto.ToProductDTO(product, brand)
+	res = dto.ToProductDTO(product, product.Brand)
 	return
 }
 
