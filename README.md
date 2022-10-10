@@ -48,6 +48,6 @@ For the documentation you can see [here](https://documenter.getpostman.com/view/
 
 ## How To Run Test
 
-Move to folder **_/auth-app_** or **_/fetch-app_** then run command
+Run command
 
     go test ./domains/...
